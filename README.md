@@ -18,13 +18,14 @@ A Python-based network scanner to discover devices, open ports, and operating sy
 # Install dependencies (Linux)
 sudo apt update
 sudo apt install python3 python3-pip nmap
-pip install python-nmap
 
 # Create virtual environment
 python3 -m venv netsherlock-venv
 source netsherlock-venv/bin/activate
+pip install python-nmap
+```
 
-# Usage
-    `
-        sudo netsherlock-venv/bin/python3 sherlock.py --subnets 192.168.1.0/24 --output results.csv --ports 22,80,443
-    `
+## Usage
+```bash
+sudo netsherlock-venv/bin/python3 sherlock.py --subnets 192.168.1.0/24 --output results.csv --ports 22,80,443
+```
